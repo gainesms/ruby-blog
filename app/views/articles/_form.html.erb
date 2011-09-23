@@ -1,0 +1,57 @@
+<%= form_for(@article) do |f| %>
+  <% if @article.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@article.errors.count, "error") %> prohibited this article from being saved:</h2>
+
+      <ul>
+      <% @article.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :article_author %><br />
+    <%= f.text_field :article_author %>
+  </div>
+  <div class="field">
+    <%= f.label :article_date %><br />
+    <%= f.text_field :article_date %>
+  </div>
+  <div class="field">
+    <%= f.label :article_title %><br />
+    <%= f.text_field :article_title %>
+  </div>
+  <div class="field">
+    <%= f.label :article_content %><br />
+    <%= f.text_field :article_content %>
+  </div>
+  <div class="field">
+    <%= f.label :article_meta_keywords %><br />
+    <%= f.text_field :article_meta_keywords %>
+  </div>
+  <div class="field">
+    <%= f.label :article_meta_description %><br />
+    <%= f.text_field :article_meta_description %>
+  </div>
+  <div class="field">
+    <%= f.label :article_url %><br />
+    <%= f.text_field :article_url %>
+  </div>
+  <div class="field">
+    <%= f.label :article_external_url %><br />
+    <%= f.text_field :article_external_url %>
+  </div>
+  <div class="field">
+    <%= f.label :article_external_org %><br />
+    <%= f.text_field :article_external_org %>
+  </div>
+  <div class="field">
+    <%= f.label :article_pic_url %><br />
+    <%= f.text_field :article_pic_url %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,39 @@
+<h1>Listing posts</h1>
+
+<table>
+  <tr>
+    <th>Post author</th>
+    <th>Post date</th>
+    <th>Post category</th>
+    <th>Post title</th>
+    <th>Post content</th>
+    <th>Post meta keywords</th>
+    <th>Post meta description</th>
+    <th>Post url</th>
+    <th>Post pic url</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @posts.each do |post| %>
+  <tr>
+    <td><%= post.post_author %></td>
+    <td><%= post.post_date %></td>
+    <td><%= post.post_category %></td>
+    <td><%= post.post_title %></td>
+    <td><%= post.post_content %></td>
+    <td><%= post.post_meta_keywords %></td>
+    <td><%= post.post_meta_description %></td>
+    <td><%= post.post_url %></td>
+    <td><%= post.post_pic_url %></td>
+    <td><%= link_to 'Show', post %></td>
+    <td><%= link_to 'Edit', edit_post_path(post) %></td>
+    <td><%= link_to 'Destroy', post, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Post', new_post_path %>

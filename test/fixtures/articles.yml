@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  article_author: MyString
+  article_date: MyString
+  article_title: MyString
+  article_content: MyString
+  article_meta_keywords: MyString
+  article_meta_description: MyString
+  article_url: MyString
+  article_external_url: MyString
+  article_external_org: MyString
+  article_pic_url: MyString
+
+two:
+  article_author: MyString
+  article_date: MyString
+  article_title: MyString
+  article_content: MyString
+  article_meta_keywords: MyString
+  article_meta_description: MyString
+  article_url: MyString
+  article_external_url: MyString
+  article_external_org: MyString
+  article_pic_url: MyString

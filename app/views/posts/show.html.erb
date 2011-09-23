@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Post author:</b>
+  <%= @post.post_author %>
+</p>
+
+<p>
+  <b>Post date:</b>
+  <%= @post.post_date %>
+</p>
+
+<p>
+  <b>Post category:</b>
+  <%= @post.post_category %>
+</p>
+
+<p>
+  <b>Post title:</b>
+  <%= @post.post_title %>
+</p>
+
+<p>
+  <b>Post content:</b>
+  <%= @post.post_content %>
+</p>
+
+<p>
+  <b>Post meta keywords:</b>
+  <%= @post.post_meta_keywords %>
+</p>
+
+<p>
+  <b>Post meta description:</b>
+  <%= @post.post_meta_description %>
+</p>
+
+<p>
+  <b>Post url:</b>
+  <%= @post.post_url %>
+</p>
+
+<p>
+  <b>Post pic url:</b>
+  <%= @post.post_pic_url %>
+</p>
+
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>

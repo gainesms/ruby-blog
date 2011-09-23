@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Article author:</b>
+  <%= @article.article_author %>
+</p>
+
+<p>
+  <b>Article date:</b>
+  <%= @article.article_date %>
+</p>
+
+<p>
+  <b>Article title:</b>
+  <%= @article.article_title %>
+</p>
+
+<p>
+  <b>Article content:</b>
+  <%= @article.article_content %>
+</p>
+
+<p>
+  <b>Article meta keywords:</b>
+  <%= @article.article_meta_keywords %>
+</p>
+
+<p>
+  <b>Article meta description:</b>
+  <%= @article.article_meta_description %>
+</p>
+
+<p>
+  <b>Article url:</b>
+  <%= @article.article_url %>
+</p>
+
+<p>
+  <b>Article external url:</b>
+  <%= @article.article_external_url %>
+</p>
+
+<p>
+  <b>Article external org:</b>
+  <%= @article.article_external_org %>
+</p>
+
+<p>
+  <b>Article pic url:</b>
+  <%= @article.article_pic_url %>
+</p>
+
+
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  organization: MyString
+  description: MyString
+  url: MyString
+  org_pic_url: MyString
+
+two:
+  organization: MyString
+  description: MyString
+  url: MyString
+  org_pic_url: MyString

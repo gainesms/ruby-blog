@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Review author:</b>
+  <%= @review.review_author %>
+</p>
+
+<p>
+  <b>Review date:</b>
+  <%= @review.review_date %>
+</p>
+
+<p>
+  <b>Review title:</b>
+  <%= @review.review_title %>
+</p>
+
+<p>
+  <b>Product name:</b>
+  <%= @review.product_name %>
+</p>
+
+<p>
+  <b>Review content:</b>
+  <%= @review.review_content %>
+</p>
+
+<p>
+  <b>Review meta keywords:</b>
+  <%= @review.review_meta_keywords %>
+</p>
+
+<p>
+  <b>Review meta description:</b>
+  <%= @review.review_meta_description %>
+</p>
+
+<p>
+  <b>Review url:</b>
+  <%= @review.review_url %>
+</p>
+
+<p>
+  <b>Review external url:</b>
+  <%= @review.review_external_url %>
+</p>
+
+<p>
+  <b>Review external org:</b>
+  <%= @review.review_external_org %>
+</p>
+
+<p>
+  <b>Review pic url:</b>
+  <%= @review.review_pic_url %>
+</p>
+
+
+<%= link_to 'Edit', edit_review_path(@review) %> |
+<%= link_to 'Back', reviews_path %>

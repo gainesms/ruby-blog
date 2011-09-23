@@ -1,0 +1,43 @@
+<h1>Listing reviews</h1>
+
+<table>
+  <tr>
+    <th>Review author</th>
+    <th>Review date</th>
+    <th>Review title</th>
+    <th>Product name</th>
+    <th>Review content</th>
+    <th>Review meta keywords</th>
+    <th>Review meta description</th>
+    <th>Review url</th>
+    <th>Review external url</th>
+    <th>Review external org</th>
+    <th>Review pic url</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @reviews.each do |review| %>
+  <tr>
+    <td><%= review.review_author %></td>
+    <td><%= review.review_date %></td>
+    <td><%= review.review_title %></td>
+    <td><%= review.product_name %></td>
+    <td><%= review.review_content %></td>
+    <td><%= review.review_meta_keywords %></td>
+    <td><%= review.review_meta_description %></td>
+    <td><%= review.review_url %></td>
+    <td><%= review.review_external_url %></td>
+    <td><%= review.review_external_org %></td>
+    <td><%= review.review_pic_url %></td>
+    <td><%= link_to 'Show', review %></td>
+    <td><%= link_to 'Edit', edit_review_path(review) %></td>
+    <td><%= link_to 'Destroy', review, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Review', new_review_path %>

@@ -1,0 +1,61 @@
+<%= form_for(@review) do |f| %>
+  <% if @review.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@review.errors.count, "error") %> prohibited this review from being saved:</h2>
+
+      <ul>
+      <% @review.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :review_author %><br />
+    <%= f.text_field :review_author %>
+  </div>
+  <div class="field">
+    <%= f.label :review_date %><br />
+    <%= f.text_field :review_date %>
+  </div>
+  <div class="field">
+    <%= f.label :review_title %><br />
+    <%= f.text_field :review_title %>
+  </div>
+  <div class="field">
+    <%= f.label :product_name %><br />
+    <%= f.text_field :product_name %>
+  </div>
+  <div class="field">
+    <%= f.label :review_content %><br />
+    <%= f.text_field :review_content %>
+  </div>
+  <div class="field">
+    <%= f.label :review_meta_keywords %><br />
+    <%= f.text_field :review_meta_keywords %>
+  </div>
+  <div class="field">
+    <%= f.label :review_meta_description %><br />
+    <%= f.text_field :review_meta_description %>
+  </div>
+  <div class="field">
+    <%= f.label :review_url %><br />
+    <%= f.text_field :review_url %>
+  </div>
+  <div class="field">
+    <%= f.label :review_external_url %><br />
+    <%= f.text_field :review_external_url %>
+  </div>
+  <div class="field">
+    <%= f.label :review_external_org %><br />
+    <%= f.text_field :review_external_org %>
+  </div>
+  <div class="field">
+    <%= f.label :review_pic_url %><br />
+    <%= f.text_field :review_pic_url %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

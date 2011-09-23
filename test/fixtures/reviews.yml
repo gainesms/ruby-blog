@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  review_author: MyString
+  review_date: MyString
+  review_title: MyString
+  product_name: MyString
+  review_content: MyString
+  review_meta_keywords: MyString
+  review_meta_description: MyString
+  review_url: MyString
+  review_external_url: MyString
+  review_external_org: MyString
+  review_pic_url: MyString
+
+two:
+  review_author: MyString
+  review_date: MyString
+  review_title: MyString
+  product_name: MyString
+  review_content: MyString
+  review_meta_keywords: MyString
+  review_meta_description: MyString
+  review_url: MyString
+  review_external_url: MyString
+  review_external_org: MyString
+  review_pic_url: MyString

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  post_author: MyString
+  post_date: MyString
+  post_category: MyString
+  post_title: MyString
+  post_content: MyString
+  post_meta_keywords: MyString
+  post_meta_description: MyString
+  post_url: MyString
+  post_pic_url: MyString
+
+two:
+  post_author: MyString
+  post_date: MyString
+  post_category: MyString
+  post_title: MyString
+  post_content: MyString
+  post_meta_keywords: MyString
+  post_meta_description: MyString
+  post_url: MyString
+  post_pic_url: MyString

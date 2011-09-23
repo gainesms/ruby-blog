@@ -1,0 +1,53 @@
+<%= form_for(@post) do |f| %>
+  <% if @post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+      <% @post.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :post_author %><br />
+    <%= f.text_field :post_author %>
+  </div>
+  <div class="field">
+    <%= f.label :post_date %><br />
+    <%= f.text_field :post_date %>
+  </div>
+  <div class="field">
+    <%= f.label :post_category %><br />
+    <%= f.text_field :post_category %>
+  </div>
+  <div class="field">
+    <%= f.label :post_title %><br />
+    <%= f.text_field :post_title %>
+  </div>
+  <div class="field">
+    <%= f.label :post_content %><br />
+    <%= f.text_field :post_content %>
+  </div>
+  <div class="field">
+    <%= f.label :post_meta_keywords %><br />
+    <%= f.text_field :post_meta_keywords %>
+  </div>
+  <div class="field">
+    <%= f.label :post_meta_description %><br />
+    <%= f.text_field :post_meta_description %>
+  </div>
+  <div class="field">
+    <%= f.label :post_url %><br />
+    <%= f.text_field :post_url %>
+  </div>
+  <div class="field">
+    <%= f.label :post_pic_url %><br />
+    <%= f.text_field :post_pic_url %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
