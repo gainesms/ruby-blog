@@ -1,50 +1,21 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Post author:</b>
-  <%= @post.post_author %>
-</p>
+<h1><a href="http://ruby-blog.localhost/posts/<%= @post.id %>"><%= @post.post_title %></a></h1>
 
-<p>
-  <b>Post date:</b>
-  <%= @post.post_date %>
-</p>
+<br />
 
-<p>
-  <b>Post category:</b>
-  <%= @post.post_category %>
-</p>
+<small><a href="http://gainesms.com"><%= @post.post_author %></a></small>
+	
+<br />
 
-<p>
-  <b>Post title:</b>
-  <%= @post.post_title %>
-</p>
+<a href="http://ruby-blog.localhost/categories/<%= "#{@post.post_category}".downcase %>"><%= @post.post_category %></a>
 
-<p>
-  <b>Post content:</b>
-  <%= @post.post_content %>
-</p>
+<br />
 
-<p>
-  <b>Post meta keywords:</b>
-  <%= @post.post_meta_keywords %>
-</p>
+<small><%= @post.post_date %></small>
 
-<p>
-  <b>Post meta description:</b>
-  <%= @post.post_meta_description %>
-</p>
+<br />
 
-<p>
-  <b>Post url:</b>
-  <%= @post.post_url %>
-</p>
+<p><%= @post.post_content %></p>
 
-<p>
-  <b>Post pic url:</b>
-  <%= @post.post_pic_url %>
-</p>
-
-
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<%= link_to 'Edit', edit_post_path(@post) %> | <%= link_to 'Back', posts_path %>

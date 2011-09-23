@@ -1,8 +1,11 @@
 class PostsController < ApplicationController
+
   # GET /posts
   # GET /posts.json
   def index
     @posts = Post.all
+    
+    @title = "Blog"
 
     respond_to do |format|
       format.html # index.html.erb
@@ -14,6 +17,11 @@ class PostsController < ApplicationController
   # GET /posts/1.json
   def show
     @post = Post.find(params[:id])
+    
+    @title = "#{@post.post_title}"
+    @keywords = "#{@post.post_meta_keywords}"
+    @description = "#{@post.post_meta_description}"
+    @author = "#{@post.post_author}"
 
     respond_to do |format|
       format.html # show.html.erb

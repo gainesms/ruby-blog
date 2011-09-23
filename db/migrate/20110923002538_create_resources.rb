@@ -1,5 +1,5 @@
 class CreateResources < ActiveRecord::Migration
-  def change
+  def self.up
     create_table :resources do |t|
       t.string :organization
       t.string :description
@@ -8,5 +8,9 @@ class CreateResources < ActiveRecord::Migration
 
       t.timestamps
     end
+  end
+  
+  def self.down
+    drop_table :resources
   end
 end

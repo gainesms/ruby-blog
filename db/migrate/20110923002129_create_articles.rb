@@ -1,5 +1,5 @@
 class CreateArticles < ActiveRecord::Migration
-  def change
+  def self.up
     create_table :articles do |t|
       t.string :article_author
       t.string :article_date
@@ -14,5 +14,9 @@ class CreateArticles < ActiveRecord::Migration
 
       t.timestamps
     end
+  end
+  
+  def self.down
+    drop_table :articles
   end
 end
